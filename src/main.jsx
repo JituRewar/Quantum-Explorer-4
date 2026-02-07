@@ -67,10 +67,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import Home from './components/Body/Home.jsx' // Your new Hero section
-import AuthLayout from './components/AuthLayout' // Keep logic ready
+import Home from './components/Body/Home.jsx' 
+import AuthLayout from './components/AuthLayout' 
 
-// Dummy components for testing flow
+
 const DummyDashboard = () => <div style={{padding: '20px'}}>Dashboard Page (Protected)</div>;
 const DummyLogin = () => <div style={{padding: '20px'}}>Login Page (Public)</div>;
 const DummySignup = () => <div style={{padding: '20px'}}>Signup Page (Public)</div>;
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />, // Landing Page (Public)
+        element: <Home />,
       },
       {
         path: "/dashboard",
